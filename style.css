@@ -572,3 +572,105 @@ h3 {
         padding: 23px;
     }
 }
+
+/* ===== DCR LAYOUT FIX ===== */
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    width: auto;
+    flex-shrink: 0;
+}
+
+.brand-logo {
+    display: block;
+    width: 36px !important;
+    height: 36px !important;
+    max-width: 36px !important;
+    min-width: 36px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+.brand span {
+    white-space: nowrap;
+}
+
+main {
+    display: block;
+    width: min(1160px, calc(100% - 48px));
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.topbar {
+    width: 100%;
+    max-width: 100%;
+}
+
+.topbar nav {
+    min-width: 0;
+}
+
+.page-heading,
+.content-section,
+.stats-grid,
+.department-grid,
+.project-grid,
+.documentation-grid {
+    min-width: 0;
+    width: 100%;
+}
+
+h1, h2, h3, p, a, span {
+    overflow-wrap: break-word;
+}
+
+.department-card,
+.project-card,
+.stat-card,
+.document-panel,
+.about-section {
+    min-width: 0;
+    overflow: hidden;
+}
+
+@media (max-width: 560px) {
+    main {
+        width: calc(100% - 32px);
+    }
+
+    .topbar {
+        align-items: flex-start;
+    }
+
+    .topbar nav {
+        flex-wrap: wrap;
+    }
+
+    .stats-grid,
+    .department-grid,
+    .project-grid,
+    .documentation-grid {
+        grid-template-columns: minmax(0, 1fr);
+    }
+}
