@@ -4,123 +4,189 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DCR — DeepCoreResearch</title>
+    <title>DeepCoreResearch — Research Division</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
-    <header class="navbar">
+    <!-- NAVIGATION -->
+    <nav class="navbar">
         <div class="brand">
-            <div class="brand-icon">◈</div>
-            <div class="brand-text">
-                <h2>DCR</h2>
-                <span>DeepCoreResearch</span>
-            </div>
+            <img src="assets/logo.png" class="brand-icon" alt="DCR Logo">
+            <span class="brand-text">DeepCoreResearch</span>
         </div>
 
-        <nav>
-            <a href="#research">Research</a>
+        <div class="nav-links">
+            <a href="#research">Departments</a>
             <a href="#projects">Projects</a>
-            <a href="#about">About</a>
-        </nav>
+            <a href="#about">About DCR</a>
+        </div>
+    </nav>
+
+
+    <!-- MAIN HEADER -->
+    <header class="hero">
+
+        <div class="status">
+            <span class="status-dot"></span>
+            Independent Research Division
+        </div>
+
+        <h1>DeepCoreResearch</h1>
+
+        <p>
+            An independent research division focused on artificial
+            intelligence, computational systems, mathematical models
+            and experimental technologies.
+        </p>
+
+        <div class="hero-actions">
+            <a href="#research" class="primary-btn">
+                Explore Departments
+            </a>
+
+            <a href="#about" class="secondary-link">
+                About the Division →
+            </a>
+        </div>
+
     </header>
 
-    <main>
-        <section class="hero">
-            <div class="status">
-                <span class="status-dot"></span>
-                INDEPENDENT RESEARCH LAB
-            </div>
 
-            <h1>Exploring the Core<br>of Intelligence.</h1>
+    <!-- DEPARTMENTS -->
+    <section class="research-section" id="research">
 
+        <div class="section-heading">
+            <span>ORGANIZATIONAL STRUCTURE</span>
+            <h2>Research Departments</h2>
             <p>
-                Researching neural architectures, computational
-                systems and the future of artificial intelligence.
+                DCR operates through specialized departments,
+                each dedicated to a different area of research.
             </p>
+        </div>
 
-            <div class="hero-actions">
-                <a href="#research" class="primary-btn">
-                    Explore research <span>→</span>
-                </a>
+        <div class="research-grid">
 
-                <a href="#projects" class="secondary-link">
-                    Our projects →
-                </a>
-            </div>
-        </section>
-
-        <section class="research-section" id="research">
-            <div class="section-heading">
-                <h2>Research divisions</h2>
-                <span>01 — AREAS OF STUDY</span>
+            <div class="research-card">
+                <span class="card-number">01</span>
+                <div class="card-icon">⌘</div>
+                <h3>Artificial Intelligence</h3>
+                <p>
+                    Research into neural architectures, learning
+                    systems, model behavior and alternative
+                    computational approaches to intelligence.
+                </p>
             </div>
 
-            <div class="research-grid">
-
-                <article class="research-card">
-                    <div class="card-icon">⌘</div>
-                    <h3>AI Research</h3>
-                    <p>Neural architectures and artificial intelligence.</p>
-                    <span class="card-number">01</span>
-                </article>
-
-                <article class="research-card">
-                    <div class="card-icon">▦</div>
-                    <h3>Computational</h3>
-                    <p>Experimental computational systems and algorithms.</p>
-                    <span class="card-number">02</span>
-                </article>
-
-                <article class="research-card">
-                    <div class="card-icon">∑</div>
-                    <h3>Mathematics</h3>
-                    <p>Mathematical models and computational theory.</p>
-                    <span class="card-number">03</span>
-                </article>
-
-                <article class="research-card">
-                    <div class="card-icon">⚗</div>
-                    <h3>Experiments</h3>
-                    <p>Research, testing and experimental development.</p>
-                    <span class="card-number">04</span>
-                </article>
-
-            </div>
-        </section>
-
-        <section class="projects-section" id="projects">
-            <div class="section-heading">
-                <h2>Selected projects</h2>
-                <span>02 — DEVELOPMENT</span>
+            <div class="research-card">
+                <span class="card-number">02</span>
+                <div class="card-icon">◈</div>
+                <h3>Computational Research</h3>
+                <p>
+                    Exploration of computational models,
+                    processing architectures, optimization
+                    and experimental computing systems.
+                </p>
             </div>
 
-            <div class="project-placeholder">
-                <span>PROJECT DATABASE</span>
-                <h3>Research projects coming soon.</h3>
-                <p>Experimental systems and architectures currently in development.</p>
-            </div>
-        </section>
-
-        <section class="about-section" id="about">
-            <div class="section-heading">
-                <h2>About DCR</h2>
-                <span>03 — ORGANIZATION</span>
+            <div class="research-card">
+                <span class="card-number">03</span>
+                <div class="card-icon">∑</div>
+                <h3>Mathematical Research</h3>
+                <p>
+                    Mathematical foundations of computational
+                    systems, algorithms, numerical methods
+                    and theoretical models.
+                </p>
             </div>
 
+            <div class="research-card">
+                <span class="card-number">04</span>
+                <div class="card-icon">⌬</div>
+                <h3>Experimental Systems</h3>
+                <p>
+                    Development and testing of experimental
+                    technologies, prototypes and unconventional
+                    system architectures.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- PROJECTS -->
+    <section class="projects-section" id="projects">
+
+        <div class="section-heading">
+            <span>RESEARCH & DEVELOPMENT</span>
+            <h2>Research Projects</h2>
             <p>
-                DeepCoreResearch is an independent research initiative
-                focused on exploring artificial intelligence,
-                computational architectures and mathematical systems.
+                Selected projects and ongoing experimental work
+                conducted within DeepCoreResearch.
             </p>
-        </section>
-    </main>
+        </div>
 
-    <footer>
-        <div class="footer-brand">DEEPCORERESEARCH</div>
-        <span>Independent Research Initiative © 2026</span>
+        <div class="project-placeholder">
+            <span class="card-number">DCR / PROJECT REGISTRY</span>
+            <h3>Research Registry</h3>
+            <p>
+                Project documentation, development records
+                and research results will be published here.
+            </p>
+            <span>REGISTRY INITIALIZATION PENDING</span>
+        </div>
+
+    </section>
+
+
+    <!-- ABOUT -->
+    <section class="about-section" id="about">
+
+        <div class="section-heading">
+            <span>INFORMATION</span>
+            <h2>About DeepCoreResearch</h2>
+        </div>
+
+        <p>
+            DeepCoreResearch (DCR) is an independent research
+            division established to investigate and develop
+            experimental technologies across multiple
+            scientific and computational disciplines.
+        </p>
+
+        <p>
+            Its work focuses on understanding complex systems,
+            exploring new architectural concepts and building
+            experimental implementations through research,
+            testing and iterative development.
+        </p>
+
+        <p>
+            DCR brings together theoretical investigation
+            and practical experimentation under one
+            organized research structure.
+        </p>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+
+        <div class="footer-brand">
+            DeepCoreResearch
+        </div>
+
+        <p>
+            Independent Research Division
+        </p>
+
+        <span>
+            © 2026 DeepCoreResearch. All rights reserved.
+        </span>
+
     </footer>
 
 </body>
